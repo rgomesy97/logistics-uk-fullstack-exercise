@@ -1,38 +1,57 @@
-.App {
-  text-align: center;
+.parent {
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainBody {
+  flex: 1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.sideMenu {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-evenly;
+  border-style: solid;
+  border-width: 1px;
+  height: 400px;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 200px;
+  padding-left: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.driverMenuContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 70%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.driverMenuDayContainer {
+  display: flex;
+}
+
+.driverInfo {
+  text-align: center;
+  width: 200px;
+  
+}
+
+.driverMenu {
+  flex: 1;
+}
+
+.dayOfWeek {
+  width: 30px;
+  height: 30px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+.driven {
+  background-color: green;
+}
+
+.dayOfWeekContainer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
 }
